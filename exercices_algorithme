@@ -1,0 +1,333 @@
+Phase 1:
+
+1.1: A=3 B=4
+
+1.2: A=2 B=3 C=1
+
+1.3: A=6 B=2
+
+1.4: A=13 B=13 C=13
+
+1.5: Non Oui
+
+1.6: Variables A, B, C en Numérique
+     Début
+     C←A
+     A←B
+     B←C
+     Fin
+     
+1.7: Variables A, B, C en Numérique
+     Début
+     B'←B
+     B←A
+     A←C
+     C←B'
+     Fin
+    
+1.8: A=24 B=2 C=26
+
+1.9: A=24 B=2 C=
+
+
+
+Phase 2:
+
+2.1: 231
+     462
+
+2.2:
+Variable nombre, carr en Numérique
+Début
+Ecrire"Entrez un nombre:"
+Lire nombre
+carr←nombre * nombre
+Ecrire "Son carré est:", carr
+Fin
+
+2.3:
+Variable HT, quantite, TTC, TVA en Numérique
+Début
+Ecrire"entrez le prix HT de l'article"
+Lire HT
+Ecrire"entrez la quantité d'articles"
+Lire quantite
+Ecrire"entrez le taux de tva"
+lire tva
+TTC←HT*quantité* (1+TVA)
+Ecrire "le prix ttc est"
+Fin
+
+2.4:
+Variable string1 string2 string3 string4
+Début
+string1←"belle marquise"
+string2←"vos beaux yeux"
+string3←"me font mourir"
+string4←"d'amour"
+Ecrire "string1" "string2" "string3" "string4"
+Ecrire "string2" "string3" "string4" "string1"
+Ecrire "string3" "string4" "string1" "string2"
+Ecrire "string4" "string1" "string2" "string3"
+Fin
+
+
+
+Phase 3:
+
+3.1: 
+Variable nombre en Entier
+Début
+Ecrire "entrez un nombre"
+Lire nombre
+Si nombre =<0 Alors
+    Ecrire "nombre négatif"
+Sinon 
+    Ecrire "nombre positif"
+Finsi
+
+3.2:
+Variable n1, n2 en Numérique
+Début
+Ecrire "entrez un nombre"
+lire n1
+Ecrire "entrez un autre nombre"
+lire n2
+
+Si n1 XOR n2 <0 Alors
+    Ecrire "résultat négatif"
+Sinon
+    Ecrire"résultat positif"
+Finsi
+
+Fin
+3.3:
+
+Variable en Caractère
+Début
+Ecrire "entrez un premier nom en majuscule"
+Ecrire "entrez un deuxième nom en majuscule"
+Ecrire "entrez un troisième nom en majuscule"
+lire nom1 nom2 nom3
+Si nom1<nom2<nom3 Alors
+    ecrire "noms ordonnés"
+Sinon ecrire "noms désordonnés"
+    Finsi
+Finsi
+
+3.4:
+
+Variable n en Entier
+Début
+Ecrire "Entrez un nombre"
+Lire n
+Si nombre =<0 Alors
+    Ecrire "nombre négatif"
+SinonSi n=0
+    Ecrire "nombre nul"
+Sinon
+    Ecrire "nombre négatif"
+    Finsi
+Finsi    
+
+3.5:
+
+Variable n1, n2 en Numérique
+Début
+Ecrire "entrez un nombre"
+lire n1
+Ecrire "entrez un autre nombre"
+lire n2
+Si nombre1 OU nombre2 <0 Alors
+    Ecrire "résultat négatif"
+    Sinon
+        Si nombre1 OU nombre2 =0
+            Ecrire "0"
+        Sinon Ecrire "résultat positif"
+        Finsi
+    Finsi
+Finsi
+
+3.6:
+
+Variable age en entier
+Début
+Ecrire "Entrez l'âge de l'enfant"
+Lire age
+Si age<6 Alors
+    Ecrire "Poussin"
+SinonSi age>12 Alors
+        Ecrire "Cadet"
+SinonSi age>10 Alors
+        Ecrire "Minime"
+Sinon Ecrire "Cadet"
+Finsi
+        
+
+
+Phase4:
+
+4.1:
+Si Tutu < Toto+4 ET Tata <> "OK" Alors
+    Tutu ← Tutu - 1
+Sinon
+    Tutu ← Tutu +1
+Finsi
+
+4.2:
+Variable h, m en Numérique
+Début
+Ecrire "Entrez l'heure qu'il est"
+Lire h
+Ecrire "Entrez le nombre de minutes de l'heure qu'il est"
+Lire m
+m←minutes+1
+Si m>59 Alors
+    h←heure+1
+    m←0
+Si        
+    h>23 Alors
+    h←0
+Finsi
+Ecrire Dans une minute, il sera "h"heure(s) "m".
+Fin
+
+4.3:
+Variable h, m, s en Numérique
+Début
+Ecrire Entrez l'heure qu'il est
+Lire h
+Ecrire Entrez le nombre de minutes de l'heure qu'il est
+Lire m
+Ecrire Entrez le nombre de secondes dans cette minute
+Lire s
+s←s+1
+Si s>59 Alors
+    m←minutes+1
+    s←0
+Si m>59 Alors
+    m←0
+    h←heures+1
+Si h>23 Alors
+    h←0
+Finsi
+Ecrire Dans une seconde, il sera "h" heure(s), "m" minute(s) et "s" seconde(s).
+Fin
+        
+4.4:
+Variable q en Numérique et p en Monétaire
+
+Début
+Ecrire Entrez le nombre de photocopies à facturer
+Lire q
+
+Si q<11
+    p←q*0.10
+    
+SinonSi q<21
+    p←(q-10)*0.09+10*0.10
+    
+Sinon
+    p←(q-20)*0.08+10*0.10+10*0.09 
+Finsi
+
+Ecrire Prix de la facture = "p"€
+Fin
+
+4.5
+Variable a en Numérique s, r en Caractère
+
+Début
+Ecrire Entrez votre âge
+Lire a
+
+Ecrire Entrez masculin ou feminin
+Lire s
+
+Si (a>20 ET masculin) OU (a>18 ET a<35 ET feminin)
+    r←imposable
+Sinon
+    r←non imposable
+Finsi
+
+Ecrire "r"
+Fin
+
+Exercice dans cours "Vérifier si une date est valide":
+
+Variable a, m, j en Entier et r en Caractère
+Début
+Ecrire "Entrez l'année, puis le mois, puis le jour, tout en chiffre"
+Lire a, m, j
+Si j← ((>=1 ET =<31) ET (m←1 OU m←3 OU m←5 OU m←7 OU m←8 OU m←10 OU m←12)) 
+XOR (j← (>=1 ET =<30) ET (m←4 OU m←6 OU m←9 OU m←11))
+    (ET j← (>=1 ET =<29) ET (m←2)) Alors
+     
+        Si m←2 ET j←29 ET (a dp 400)
+        XOR m←2 ET j←28 ET (a dp 100)
+         
+        r=valide
+        Finsi
+Sinon
+    r=invalide    
+Finsi
+Ecrire "la date saisie est" r.
+Fin
+
+ALT:
+Variable a, m, j en Entier et r en Caractère
+Début
+Ecrire "Entrez l'année, puis le mois, puis le jour, tout en chiffre"
+Lire a, m, j
+Si (a dp 100)
+    SinonSi (m←1 OU m←3 OU m←5 OU m←7 OU m←8 OU m←10 m←12) ET (j >=1 ET j=<31) XOR (m←2 ET j=<28) Alors
+    r←valide
+Sinon (a dp 400) 
+    SinonSi (m←4 OU m←6 OU m←9 OU m←11) ET (j >=1 ET =<30) XOR
+    r←valide
+    Finsi
+Sinon (a dp 400)
+    
+         
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
